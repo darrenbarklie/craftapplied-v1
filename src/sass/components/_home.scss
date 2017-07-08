@@ -1,0 +1,80 @@
+
+$pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
+
+.splash-background {
+  background-color:$base-green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  // TODO: Calc for header height / Fix 'magic number'
+  height: calc(50% + 184px);
+  z-index: -1;
+}
+
+.page-home {
+  height: 100%;
+
+  #splash {
+    height: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    h1 {
+      font-size: 2.369em;
+    }
+  }
+
+  #services {
+    // border: 1px solid red;
+    padding: 4em 0 6em;
+    position: relative;
+    p {
+      font-size: 1.33em;
+    }
+    span {
+      display: block;
+      font-family: "NeuzeitOffice-Bold";
+      font-size: 1.5em;
+      padding: 0.66em 0;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 20px;
+      display: block;
+      background: $pattern-dot-green;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  #work {
+    //height: 100%;
+    border: 1px solid red;
+    padding: 4em 0 6em;
+    p {
+      font-size: 1.333em;
+    }
+    .work-item {
+      display: block;
+      border: 1px solid green;
+    }
+    .work-item-01 {
+      display: block;
+      height: 836px;
+      height: 75%;
+    }
+    .work-item-02 {
+      display: block;
+      height: 414px;
+    }
+  }
+
+  #contact {
+    border: 2px solid black;
+    background: $pattern-dot-green;
+    padding: 2em 0 10em;
+  }
+}

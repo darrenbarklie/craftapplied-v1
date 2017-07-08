@@ -2,7 +2,14 @@ import React, { Component } from 'react';
 import { HashRouter } from 'react-router-dom';
 import { Grid } from 'react-flexbox-grid';
 
-// import Header from './header/Header';
+import Header from './header/Header';
+import Splash from './home/Splash';
+import Services from './home/Services';
+import Work from './home/Work';
+import Contact from './home/Contact';
+
+
+
 // import Stage from './stage/Stage';
 // import Footer from './footer/Footer';
 
@@ -13,10 +20,15 @@ class App extends Component {
       <HashRouter>
         <Grid fluid className="app">
 
-          {/* <Header />
-          <Stage />
-          <Footer /> */}
-          <h1>Hey</h1>
+          <div className="splash-background"></div>
+
+          <div className="page-home page">
+            <Header />
+            <Splash />
+            <Services />
+            <Work />
+            <Contact />
+          </div>
 
         </Grid>
       </HashRouter>

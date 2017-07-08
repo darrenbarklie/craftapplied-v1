@@ -118,12 +118,13 @@ $fontPath: "../assets/font" !default;
 
 /* Global Base Styles */
 body {
-  font-family: 'CaeciliaLTStd-Roman', system;
+  font-family: 'NeuzeitOffice-Regular', system;
   font-size: 18px;
+  color: $black;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'CaeciliaLTStd-Bold', serif;
-  line-height: 1.5;
+  font-family: 'NeuzeitOffice-Bold', serif;
+  line-height: 1.333;
 }
 h1 { font-size: 4.209em; }
 h2 { font-size: 3.157em; }
@@ -132,7 +133,7 @@ h4 { font-size: 1.777em; }
 h5 { font-size: 1.333em; margin-bottom: 0.2em; }
 h6 { font-size: 1em; margin-bottom: 0.25em; }
 p {
-  font-family: 'CaeciliaLTStd-Roman', system;
+  font-family: 'NeuzeitOffice-Regular', system;
   margin-bottom: 1em;
   line-height: 1.333;
 }
@@ -152,7 +153,7 @@ ul {
   }
 }
 a {
-  font-family: 'CaeciliaLTStd-Bold', system;
+  font-family: 'NeuzeitOffice-Bold', system;
   color: $base-green;
   transition: color 0.5s ease-out;
   text-decoration: none;
