@@ -1,0 +1,39 @@
+@import 'mixins/reset';
+
+@import 'globals/colors';
+@import 'globals/typography';
+
+@import 'mixins/draw-border';
+// 
+// @import 'globals/navigation';
+//
+// @import 'components/home';
+// @import 'components/contact';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  color: $white;
+  background-color: $black;
+}
+html, body, #root {
+  height: 100%;
+  padding: 0;
+}
+#root > .layout {
+  padding: 0;
+  height: 100%;
+}
+
+
+/* --- Input --- */
+
+input [type="submit"],
+button {
+  @include draw-border($light-black, $white, $base-green);
+  cursor: pointer;
+}
