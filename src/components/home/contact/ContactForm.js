@@ -31,25 +31,25 @@ class ContactForm extends Component {
             <form onSubmit={submitForm}>
               <Row>
 
-                <Col lg={4} md={4} sm={6} xs={12} className="contact-name form-item">
+                <Col lg={4} md={6} sm={12} xs={12} className="contact-name form-item">
                   <label>Name <span>(Required)</span>
                     <Text field='name' />
                   </label>
                 </Col>
 
-                <Col lg={4} md={4} sm={6} xs={12} className="contact-email form-item">
+                <Col lg={4} md={6} sm={12} xs={12} className="contact-email form-item">
                   <label>Email <span>(Required)</span>
                     <Text field='email' />
                   </label>
                 </Col>
 
-                <Col lg={4} md={4} sm={6} xs={12} className="contact-company form-item">
+                <Col lg={4} md={6} sm={12} xs={12} className="contact-company form-item">
                   <label>Company
                     <Text field='company' />
                   </label>
                 </Col>
 
-                <Col lg={12} md={12} sm={6} xs={12} className="contact-subject form-item">
+                <Col lg={12} md={6} sm={12} xs={12} className="contact-subject form-item">
                   <label>Subject
                     <Text field='subject' />
                   </label>
@@ -65,9 +65,18 @@ class ContactForm extends Component {
                   </label>
                 </Col>
 
-                <Col lg={12} md={12} sm={12} xs={12}>
-                  <button type='submit'>Send Message</button>
-                </Col>
+                <Row className="row">
+
+                  <Col lg={6} md={6} sm={6} xs={12} className="contact-submit">
+                    <button type='submit'>Send Message</button>
+                  </Col>
+
+                  <Col lg={6} md={6} sm={6} xs={12} className="contact-alt">
+                    <p>Alternatively you can email us at:</p>
+                    <a href="mailto:hello@craftapplied.com">hello@craftapplied.com</a>
+                  </Col>
+
+                </Row>
 
               </Row>
             </form>

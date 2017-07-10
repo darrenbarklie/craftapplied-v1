@@ -140,35 +140,66 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
               transition: border 0.33s linear;
             }
             input + div {
-              color: $red;
               position: absolute;
               bottom: 0;
               right: 0.75em;
             }
             textarea + div {
-              color: $red;
               position: absolute;
               bottom: 0.5em;
               right: 0.75em;
+              font-family: "NeuzeitOffice-Italic";
+            }
+            .FormError {
+              color: $red;
+              font-family: "NeuzeitOffice-Italic";
             }
           }
         }
       }
       button[type="submit"] {
-        padding: 1.2em 2em 1.1em;
+        padding: 1.5em 3em 1.4em;
         color: $black;
         background-color: $base-green;
         font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1px;
-
         border: 0;
-        &:hover, &:focus {
+        margin-bottom: 1em;
+        transition: all 0.5s ease-out;
+        &:hover {
           cursor: pointer;
           background-color: lighten($base-green, 10%);
-          transition: all 0.33s linear;
+          transition: all 0.22s linear;
           outline: 0;
+        }
+        &:focus {
+          color: $white;
+          outline: 0;
+        }
+        &:active {
+          color: $white;
+          background-color: darken($base-green, 2.5%);
+        }
+      }
+      .row {
+        width: 100%;
+      }
+      .contact-alt {
+        p {
+          margin: 0.5em 0;
+        }
+        a {
+          color: $black;
+          font-size: 1.5em;
+          &:hover, &:focus {
+            color: $base-green;
+            transition: all 0.33s linear;
+          }
+          &:active {
+            color: darken($base-green, 2.5%);
+          }
         }
       }
     }
