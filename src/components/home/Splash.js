@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-flexbox-grid';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class Splash extends Component {
   render() {
     return (
       <section id="splash">
 
-        <Row>
-          <Col lg={7} md={8} sm={8} xs={12}>
+        <Grid fluid className="grid-container" >
+          <Row>
+            <Col lg={7} md={8} sm={8} xs={12}>
 
-            <h1>We are a digital creative agency dedicated to crafting valuable UI &amp; UX solutions.</h1>
+              <h1>We are a digital creative agency dedicated to crafting valuable UI &amp; UX solutions.</h1>
 
-          </Col>
-        </Row>
+            </Col>
+          </Row>
+        </Grid>
 
       </section>
     )

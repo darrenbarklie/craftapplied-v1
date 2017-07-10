@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Brand extends Component {
   render() {
     return (
-      <div className="brand">
+      <div>
         Brand
       </div>
     )

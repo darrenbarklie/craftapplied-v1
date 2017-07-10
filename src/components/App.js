@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { HashRouter } from 'react-router-dom';
 import { Grid } from 'react-flexbox-grid';
 import { Scroll } from 'react-scroll';
+
+import Layout from './Layout';
 
 import Header from './header/Header';
 import Splash from './home/Splash';
@@ -14,11 +15,25 @@ import Footer from './footer/Footer';
 class App extends Component {
   render() {
     return (
-      <HashRouter>
-        <Grid fluid className="app" >
+      <div className="app">
 
-          <div className="splash-background"></div>
+        <Header />
 
+        <Splash />
+
+        <Layout page="home">
+
+
+
+        </Layout>
+
+
+
+        <Grid fluid className="grid-container" >
+
+          {/* <div className="splash-background"></div> */}
+
+          {/*
           <div className="page-home page">
             <Header />
 
@@ -28,10 +43,12 @@ class App extends Component {
             <Contact />
 
             <Footer />
-          </div>
+          </div> */}
 
         </Grid>
-      </HashRouter>
+
+      </div>
+
     )
   }
 }

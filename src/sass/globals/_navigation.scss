@@ -1,18 +1,15 @@
-nav.nav-primary {
+.nav-primary {
   flex: 0 0 auto;
   ul {
     margin: 0;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-
     li {
       flex: 0 0 auto;
       min-width: 33.3%;
       margin: 0;
-
       &:before {
         content: "";
         padding: 0;

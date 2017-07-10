@@ -1,28 +1,27 @@
 
-.splash-background {
-  background-color:$base-green;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  // TODO: Calc for header height / Fix 'magic number'
-  height: calc(50% + 184px);
-  z-index: -1;
-}
+#splash {
+  position: relative;
+  top: 180px;
+  height: 60%;
 
-.page-home {
-  height: 100%;
-
-  #splash {
-    height: 50%;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    h1 {
-      font-size: 2.369em;
+  background: $base-green;
+  .row {
+    height: 100%;
+    > div {
+      height: 100%;
+      display: flex;
+      align-items: center;
     }
   }
+  h1 {
+    display: block;
+    font-size: 2.369em;
+  }
+}
+
+
+.home {
+  height: 100%;
 
   #services {
     padding: 4em 0 6em;

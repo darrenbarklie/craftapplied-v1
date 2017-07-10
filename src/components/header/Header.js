@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row } from 'react-flexbox-grid';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import Brand from './Brand';
 import Navigation from './Navigation';
@@ -9,10 +9,19 @@ class Header extends Component {
   render() {
     return (
       <header className="main">
+        <Grid fluid className="grid-container">
+          <Row>
 
-        <Brand />
-        <Navigation />
+            <Col className="brand">
+              <Brand />
+            </Col>
 
+            <Col className="nav-primary">
+              <Navigation />
+            </Col>
+
+          </Row>
+        </Grid>
       </header>
     )
   }
