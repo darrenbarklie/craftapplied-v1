@@ -3,18 +3,13 @@
 @import 'globals/colors';
 @import 'globals/typography';
 
+@import 'mixins/aspect-ratio';
 //@import 'mixins/draw-border';
 
 @import 'globals/header';
 
-
-
-
-
 @import 'components/home';
 // @import 'components/contact';
-
-
 
 
 html {
@@ -36,6 +31,16 @@ html, body, #root {
   .row {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+.img-wrapper {
+  max-width: 100%;
+  // //height: auto;
+  // display: block;
+  // border: 1px solid red;
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 

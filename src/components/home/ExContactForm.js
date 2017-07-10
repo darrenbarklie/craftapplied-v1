@@ -3,14 +3,6 @@ import { Form, Text, Textarea, FormError } from 'react-form'
 
 
 class ExContactForm extends Component {
-  // render() {
-  //   return (
-  //     <h1>Contact Form Sample</h1>
-  //   )
-  // }
-
-
-
   render() {
 
     const contactForm = (

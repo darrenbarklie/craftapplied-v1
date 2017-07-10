@@ -51,24 +51,35 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
   }
 
   #work {
-    //height: 100%;
-    border: 1px solid red;
     padding: 4em 0 6em;
     p {
       font-size: 1.333em;
     }
+    .col {
+      padding: 0;
+    }
     .work-item {
-      display: block;
-      border: 1px solid green;
+      width: 100%;
+      display: inline-block;
+      position: relative;
+      .label {
+        position: absolute;
+        top: 1em;
+        left: 1.5em;
+        h4, span {
+          font-size: 1em;
+          padding: 0.5em 0;
+        }
+        &.light {
+          color: $white;
+        }
+      }
     }
-    .work-item-01 {
-      display: block;
-      height: 836px;
-      height: 75%;
-    }
-    .work-item-02 {
-      display: block;
-      height: 414px;
+    .work-item-03 {
+      // BUG:  Magic Number to fix horizontal padding
+      // TODO: Needs cross-browser checking
+      position: relative;
+      top: -4px;
     }
   }
 
