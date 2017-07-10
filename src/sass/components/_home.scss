@@ -52,16 +52,23 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
 
   #work {
     padding: 4em 0 6em;
+    background: red;
     p {
       font-size: 1.333em;
     }
     .col {
       padding: 0;
+      &.height-fix {
+        //border: 1px solid red;
+        //background: blue;
+        //height: 100%;
+      }
     }
     .work-item {
       width: 100%;
       display: inline-block;
       position: relative;
+      border: 8px solid $white;
       .label {
         position: absolute;
         top: 1em;
@@ -75,17 +82,23 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
         }
       }
     }
-    .work-item-03 {
-      // BUG:  Magic Number to fix horizontal padding
-      // TODO: Needs cross-browser checking
-      position: relative;
-      top: -4px;
-    }
+    // BUG : Tighten alignment of elements, due to blank artifact below the --aspect-ratio function, magic numbers everywhere...
+      .work-item-03 {
+        top: -28px;
+        border-top: 16px solid $white;
+      }
+      .work-item-04 {
+        margin-top: -32px;
+      }
+      .work-item-05,
+      .work-item-06 {
+        margin-top: -4px;
+      }
   }
 
   #contact {
     background: $pattern-dot-green;
-    padding: 3em 2em;
+    padding: 2.5em 1em 2em;
     margin-bottom: 20em;
     .shoutout {
       font-family: "NeuzeitOffice-Bold";
@@ -114,9 +127,10 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
           color: $black;
           background-color: $white;
           border: 2px solid $white;
+          font-family: monospace;
           font-size: 2em;
           padding: 0.5em;
-          padding: 0.5em 0.33em 0.33em;
+          padding: 0.5em 0.33em 0.5em;
           transition: border 0.75s ease-out;
           &:focus {
             border: 2px solid $base-green;
@@ -153,15 +167,16 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
             .FormError {
               color: $red;
               font-family: "NeuzeitOffice-Italic";
+              text-transform: none;
             }
           }
         }
       }
       button[type="submit"] {
-        padding: 1.5em 3em 1.4em;
+        padding: 1em 1.5em 0.9em;
         color: $black;
         background-color: $base-green;
-        font-size: 1em;
+        font-size: 1.5em;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1px;

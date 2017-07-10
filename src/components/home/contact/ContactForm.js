@@ -20,9 +20,6 @@ class ContactForm extends Component {
         }}
         onValidationFail={() => {
           // window.alert('You are missing some required fields, please check before resubmitting.')
-          return (
-            <div>Validation Failed</div>
-          )
         }}
       >
 

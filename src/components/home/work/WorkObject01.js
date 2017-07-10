@@ -16,7 +16,9 @@ class WorkObject01 extends Component {
 
     return (
       <div className="work-item-01 work-item">
-
+        {/* 2/3.03595 */}
+        {/* <AspectRatio ratio="2/3" style={WorkStyle} /> */}
+        {/* <AspectRatio ratio="2/3.03595" style={WorkStyle} /> */}
         <AspectRatio ratio="2/3" style={WorkStyle} />
 
         <div className="label">
