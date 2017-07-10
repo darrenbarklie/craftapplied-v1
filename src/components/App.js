@@ -17,35 +17,23 @@ class App extends Component {
     return (
       <div className="app">
 
-        <Header />
 
-        <Splash />
+          <Header />
 
-        <Layout page="home">
+          <Splash />
+
+          <div className="layout-wrapper">
+            <Layout page="home">
+
+              <Services />
+              <Work />
+              <Contact />
 
 
+            </Layout>
+          </div>
 
-        </Layout>
-
-
-
-        <Grid fluid className="grid-container" >
-
-          {/* <div className="splash-background"></div> */}
-
-          {/*
-          <div className="page-home page">
-            <Header />
-
-            <Splash />
-            <Services />
-            <Work />
-            <Contact />
-
-            <Footer />
-          </div> */}
-
-        </Grid>
+        <Footer />
 
       </div>
 

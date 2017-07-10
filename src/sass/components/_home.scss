@@ -1,10 +1,8 @@
 
 #splash {
-  position: relative;
-  top: 180px;
+  margin-top: 180px;
   height: 60%;
-
-  background: $base-green;
+  background: rgba($base-green, 0.2);
   .row {
     height: 100%;
     > div {
@@ -21,8 +19,6 @@
 
 
 .home {
-  height: 100%;
-
   #services {
     padding: 4em 0 6em;
     position: relative;

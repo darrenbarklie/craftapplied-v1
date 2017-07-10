@@ -1,6 +1,7 @@
 footer.main {
   background: $grey-light;
   padding: 4em 0;
+  flex-shrink: 0;
   .social {
     ul {
       margin: 0;

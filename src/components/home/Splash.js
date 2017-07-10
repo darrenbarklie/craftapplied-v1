@@ -6,7 +6,7 @@ class Splash extends Component {
     return (
       <section id="splash">
 
-        <Grid fluid className="grid-container" >
+        <Grid fluid className="grid-container">
           <Row>
             <Col lg={7} md={8} sm={8} xs={12}>
 
