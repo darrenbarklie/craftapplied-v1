@@ -84,9 +84,93 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
   }
 
   #contact {
-    border: 2px solid black;
     background: $pattern-dot-green;
-    padding: 2em 0 10em;
+    padding: 3em 2em;
     margin-bottom: 20em;
+    .shoutout {
+      font-family: "NeuzeitOffice-Bold";
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+    .contact-form {
+      padding: 3em 0 0;
+      .form-item {
+        margin: 0 0 1em;
+        label {
+          font-family: "NeuzeitOffice-Bold";
+          text-transform: uppercase;
+          font-size: 1em;
+          line-height: 1.5;
+          span {
+            font-size: 0.75em;
+            position: relative;
+            top: -0.125em;
+            color: rgba($black, 0.3);
+          }
+        }
+        input,
+        textarea {
+          width: 100%;
+          color: $black;
+          background-color: $white;
+          border: 2px solid $white;
+          font-size: 2em;
+          padding: 0.5em;
+          padding: 0.5em 0.33em 0.33em;
+          transition: border 0.75s ease-out;
+          &:focus {
+            border: 2px solid $base-green;
+            box-shadow: none;
+            outline: none;
+            transition: border 0.5s ease-out;
+          }
+          &:active {
+            border: 2px solid $base-green;
+            transition: border 0.5s ease-out;
+          }
+        }
+        &.contact-message textarea {
+          height: 6em;
+        }
+        .FormInput {
+          position: relative;
+          &.-hasError {
+            input, textarea {
+              border: 2px solid $red;
+              transition: border 0.33s linear;
+            }
+            input + div {
+              color: $red;
+              position: absolute;
+              bottom: 0;
+              right: 0.75em;
+            }
+            textarea + div {
+              color: $red;
+              position: absolute;
+              bottom: 0.5em;
+              right: 0.75em;
+            }
+          }
+        }
+      }
+      button[type="submit"] {
+        padding: 1.2em 2em 1.1em;
+        color: $black;
+        background-color: $base-green;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        border: 0;
+        &:hover, &:focus {
+          cursor: pointer;
+          background-color: lighten($base-green, 10%);
+          transition: all 0.33s linear;
+          outline: 0;
+        }
+      }
+    }
   }
 }
