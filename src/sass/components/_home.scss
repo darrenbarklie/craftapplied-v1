@@ -27,7 +27,6 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
   }
 
   #services {
-    // border: 1px solid red;
     padding: 4em 0 6em;
     position: relative;
     p {
@@ -52,17 +51,11 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
 
   #work {
     padding: 4em 0 6em;
-    background: red;
     p {
       font-size: 1.333em;
     }
     .col {
       padding: 0;
-      &.height-fix {
-        //border: 1px solid red;
-        //background: blue;
-        //height: 100%;
-      }
     }
     .work-item {
       width: 100%;
@@ -82,7 +75,7 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
         }
       }
     }
-    // BUG : Tighten alignment of elements, due to blank artifact below the --aspect-ratio function, magic numbers everywhere...
+    // BUG : Tighten alignment of elements, due to blank 4px artifact below the --aspect-ratio function, unavoidable magic numbers...
       .work-item-03 {
         top: -28px;
         border-top: 16px solid $white;
@@ -99,7 +92,7 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
   #contact {
     background: $pattern-dot-green;
     padding: 2.5em 1em 2em;
-    margin-bottom: 20em;
+    margin: 0 0 6em;
     .shoutout {
       font-family: "NeuzeitOffice-Bold";
       font-size: 3em;
@@ -176,7 +169,7 @@ $pattern-dot-green: url('../assets/img/pattern-dot-green-8px.png');
         padding: 1em 1.5em 0.9em;
         color: $black;
         background-color: $base-green;
-        font-size: 1.5em;
+        font-size: 1.25em;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1px;

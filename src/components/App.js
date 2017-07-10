@@ -7,6 +7,7 @@ import Splash from './home/Splash';
 import Services from './home/Services';
 import Work from './home/Work';
 import Contact from './home/Contact';
+import Footer from './footer/Footer';
 
 
 // import Stage from './stage/Stage';
@@ -27,7 +28,10 @@ class App extends Component {
             <Services />
             <Work />
             <Contact />
+            <Footer />
           </div>
+
+          {/* <div className="footer-background">HEY</div> */}
 
         </Grid>
       </HashRouter>

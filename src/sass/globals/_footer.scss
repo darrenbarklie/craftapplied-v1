@@ -1,0 +1,24 @@
+footer.main {
+  background: $grey-light;
+  padding: 4em 0;
+  .social {
+    ul {
+      margin: 0;
+      li {
+        display: inline-block;
+        padding: 0 0.75em 0 0;
+        &:nth-of-type(1) {
+
+          &::before {
+            display: none;
+            content: "";
+          }
+        }
+        a {
+          color: $black;
+          font-family: "NeuzeitOffice-Bold";
+        }
+      }
+    }
+  }
+}

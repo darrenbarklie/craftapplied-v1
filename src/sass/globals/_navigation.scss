@@ -1,0 +1,16 @@
+nav.nav-primary {
+  height: 100%;
+  flex: 1 1 auto;
+  border: 1px solid red;
+  ul {
+    margin: 0;
+    display: flex;
+    li {
+
+      &:before {
+        content: "";
+        padding: 0;
+      }
+    }
+  }
+}

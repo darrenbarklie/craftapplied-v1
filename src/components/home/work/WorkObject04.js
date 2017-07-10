@@ -11,7 +11,7 @@ class WorkObject04 extends Component {
     const WorkStyle = {
       backgroundImage: `url(${WorkImg})`,
       backgroundSize: "cover",
-      backgroundPosition: "top center"
+      backgroundPosition: "center 15%"
     }
 
     return (
