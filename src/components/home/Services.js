@@ -4,7 +4,7 @@ import { Row, Col } from 'react-flexbox-grid';
 class Services extends Component {
   render() {
     return (
-      <div id="services">
+      <section id="services">
 
         <Row>
           <Col lg={6} md={8} sm={8} xs={12}>
@@ -29,7 +29,7 @@ class Services extends Component {
           </Col>
         </Row>
 
-      </div>
+      </section>
     )
   }
 }

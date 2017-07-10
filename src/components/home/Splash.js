@@ -4,7 +4,7 @@ import { Row, Col } from 'react-flexbox-grid';
 class Splash extends Component {
   render() {
     return (
-      <div id="splash">
+      <section id="splash">
 
         <Row>
           <Col lg={7} md={8} sm={8} xs={12}>
@@ -14,7 +14,7 @@ class Splash extends Component {
           </Col>
         </Row>
 
-      </div>
+      </section>
     )
   }
 }

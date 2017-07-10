@@ -3,10 +3,11 @@ import { Row, Col } from 'react-flexbox-grid';
 
 import ContactForm from './contact/ContactForm';
 
+
 class Contact extends Component {
   render() {
     return (
-      <div id="contact">
+      <section id="contact">
 
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
@@ -19,7 +20,7 @@ class Contact extends Component {
           </Col>
         </Row>
 
-      </div>
+      </section>
     )
   }
 }

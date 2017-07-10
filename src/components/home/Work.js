@@ -12,8 +12,7 @@ import WorkObject06 from './work/WorkObject06';
 class Work extends Component {
   render() {
     return (
-
-      <div id="work">
+      <section id="work">
 
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
@@ -44,7 +43,7 @@ class Work extends Component {
 
         </Row>
 
-      </div>
+      </section>
     )
   }
 }
