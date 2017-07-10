@@ -1,9 +1,13 @@
 header.main {
-  padding: 28px 0;
+  position: fixed;
   width: 100%;
+  padding: 28px 0;
+  background: green;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
+  z-index: 99;
   .brand {
     display: inline-block;
     flex: 0 0 auto;

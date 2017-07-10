@@ -17,7 +17,7 @@ class Navigation extends Component {
           <li><Link to="contact" spy={true} smooth={true} duration={500} activeClass="active">Contact</Link></li>
 
           <li><a href="#">Blog</a></li>
-
+          
           <li><a href="#">Project Planner</a></li>
 
         </ul>
