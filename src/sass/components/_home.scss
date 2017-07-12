@@ -1,8 +1,10 @@
 
 #splash {
-  margin-top: 180px;
+  //margin-top: 180px;
+  margin-top: 0;
   height: 60%;
   background: rgba($base-green, 0.2);
+  background: $base-green;
   .row {
     height: 100%;
     > div {
@@ -11,9 +13,35 @@
       align-items: center;
     }
   }
-  h1 {
-    display: block;
-    font-size: 2.369em;
+  .lead-text {
+    h1 {
+      display: block;
+      font-size: 2.369em;
+      font-size: 3.157em;
+    }
+  }
+  .splash-graphic {
+    position: relative;
+    .container {
+      //display: block;
+      display: flex;
+      width: 288px;
+      height: 288px;
+      border-radius: 50%;
+      background: $white;
+      overflow: hidden;
+
+
+      .splash-graphic {
+        //border: 1px solid red;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .splash-graphic-01 {
+
+      }
+
+    }
   }
 }
 
@@ -88,7 +116,7 @@
     margin: 0 0 6em;
     .shoutout {
       font-family: "NeuzeitOffice-Bold";
-      font-size: 3em;
+      font-size: 3.157em;
       margin-bottom: 0;
     }
     .contact-form {
