@@ -11,14 +11,14 @@ class Splash extends Component {
     return (
       <section id="splash">
 
-        <Grid fluid className="grid-container">
+        <Grid fluid>
           <Row>
 
-            <Col lg={7} md={8} sm={8} xs={12} className="lead-text">
+            <Col lg={7} md={8} sm={6} xs={12} className="lead-text">
               <h1>We are a digital creative agency dedicated to crafting valuable UI &amp; UX solutions.</h1>
             </Col>
 
-            <Col lg={5} md={4} sm={4} xs={12} className="splash-graphic">
+            <Col lg={5} md={4} sm={6} xs={12} className="splash-graphic">
               <div className="container">
                 <img src={GraphicPlanning} className="splash-graphic-01 splash-graphic" alt="Graphic Planning" />
                 {/* <img src={GraphicDesign} alt="Graphic Design" />

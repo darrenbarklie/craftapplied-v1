@@ -1,39 +1,33 @@
 
 #splash {
-  //margin-top: 180px;
-  margin-top: 0;
-  height: 60%;
-  background: rgba($base-green, 0.2);
   background: $base-green;
   .row {
     height: 100%;
+    padding: 4em 0;
+    align-items: center;
+    flex-wrap: wrap-reverse;
     > div {
       height: 100%;
       display: flex;
-      align-items: center;
+      padding: 2em 0;
     }
   }
   .lead-text {
     h1 {
-      display: block;
       font-size: 2.369em;
       font-size: 3.157em;
     }
   }
   .splash-graphic {
-    position: relative;
     .container {
-      //display: block;
       display: flex;
       width: 288px;
       height: 288px;
       border-radius: 50%;
       background: $white;
       overflow: hidden;
-
-
       .splash-graphic {
-        //border: 1px solid red;
+        border: 1px solid red;
         width: 70%;
         margin: 0 auto;
       }
