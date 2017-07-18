@@ -1,7 +1,6 @@
 
 #splash {
   background: $base-green;
-  background: red;
   .row {
     height: 100%;
     padding: 4em 0;
@@ -21,19 +20,101 @@
   }
   .splash-graphic {
     .container {
+      position: relative;
       display: flex;
+      justify-content: center;
+      align-items: center;
       width: 288px;
       height: 288px;
       border-radius: 50%;
       background: $white;
       overflow: hidden;
       .splash-graphic {
-        border: 1px solid red;
-        width: 70%;
+        position: absolute;
+        width: 66.6%;
         margin: 0 auto;
+        opacity: 0;
+
       }
       .splash-graphic-01 {
-
+        animation-name: toptobottom-01;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+      }
+      .splash-graphic-02 {
+        animation-name: toptobottom-02;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+      }
+      .splash-graphic-03 {
+        animation-name: toptobottom-03;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-delay: 8s;
+      }
+      @keyframes toptobottom-01 {
+        0% {
+          opacity: 0;
+          transform: translateY(-120%);
+        }
+        11% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        22% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        33% {
+          opacity: 0;
+          transform: translateY(133.3%);
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes toptobottom-02 {
+        0% {
+          opacity: 0;
+          transform: translateY(-120%);
+        }
+        11% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        22% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        33% {
+          opacity: 0;
+          transform: translateY(133.3%);
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes toptobottom-03 {
+        0% {
+          opacity: 0;
+          transform: translateY(-120%);
+        }
+        11% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        22% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        33% {
+          opacity: 0;
+          transform: translateY(133.3%);
+        }
+        100% {
+          opacity: 0;
+        }
       }
 
     }

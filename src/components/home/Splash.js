@@ -21,8 +21,8 @@ class Splash extends Component {
             <Col lg={5} md={4} sm={6} xs={12} className="splash-graphic">
               <div className="container">
                 <img src={GraphicPlanning} className="splash-graphic-01 splash-graphic" alt="Graphic Planning" />
-                {/* <img src={GraphicDesign} alt="Graphic Design" />
-                <img src={GraphicDevelopment} alt="Graphic Development" /> */}
+                <img src={GraphicDesign} className="splash-graphic-02 splash-graphic"alt="Graphic Design" />
+                <img src={GraphicDevelopment} className="splash-graphic-03 splash-graphic"alt="Graphic Development" />
               </div>
             </Col>
 
