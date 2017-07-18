@@ -1,5 +1,11 @@
 .nav-primary {
   flex: 0 0 auto;
+
+  // TODO: Responsive Navigation
+  @media only screen and (max-width : 48em) {
+    display: none;
+  }
+
   ul {
     margin: 0;
     display: flex;

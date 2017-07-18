@@ -3,13 +3,13 @@ footer.main {
   padding: 4em 0;
   flex-shrink: 0;
   .social {
+    padding-bottom: 1em;
     ul {
       margin: 0;
       li {
         display: inline-block;
-        padding: 0 0.75em 0 0;
+        padding: 0 0.5em 0 0;
         &:nth-of-type(1) {
-
           &::before {
             display: none;
             content: "";
@@ -18,8 +18,68 @@ footer.main {
         a {
           color: $black;
           font-family: "NeuzeitOffice-Bold";
+          padding: 0.25em;
+          transition: all 0.5s ease-out;
+          &:hover {
+            color: $white;
+            background: $base-green;
+            transition: all 0.33s linear;
+          }
+        }
+        @media only screen and (max-width : 48em) {
+          display: block;
+          &::before {
+            display: none;
+            content: "";
+          }
         }
       }
+    }
+    @media only screen and (max-width : 64em) {
+      text-align: center;
+    }
+  }
+  .navigation {
+    ul {
+      margin: 0;
+      text-align: center;
+      li {
+        display: inline-block;
+        margin-left: 0.75em;
+        &::before {
+          color: $black;
+        }
+        &:nth-of-type(1) {
+          &::before {
+            display: none;
+            content: "";
+          }
+        }
+        a {
+          padding: 0.25em;
+          text-transform: lowercase;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        @media only screen and (max-width : 48em) {
+          display: block;
+          margin-left: 0;
+          &::before {
+            display: none;
+            content: "";
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    font-size: 1em;
+    padding: 2em 0 0;
+    text-align: center;
+    p {
+      display: block;
+      width: 100%;
     }
   }
 }

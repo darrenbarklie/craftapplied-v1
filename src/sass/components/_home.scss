@@ -6,16 +6,34 @@
     padding: 4em 0;
     align-items: center;
     flex-wrap: wrap-reverse;
+    @media only screen and (max-width : 48em) {
+      padding: 0;
+    }
     > div {
       height: 100%;
       display: flex;
-      padding: 2em 0;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      @media only screen and (max-width : 48em) {
+        padding-top: 0;
+      }
     }
   }
   .lead-text {
     h1 {
-      font-size: 2.369em;
       font-size: 3.157em;
+      @media only screen and (max-width : 64em) {
+        font-size: 2.369em;
+      }
+      @media only screen and (max-width : 48em) {
+        font-size: 2.369em;
+        font-size: 1.777em;
+        padding-bottom: 2em;
+        text-align: center;
+      }
+      @media only screen and (max-width : 22em) {
+        font-size: 1.333em;
+      }
     }
   }
   .splash-graphic {
@@ -29,12 +47,19 @@
       border-radius: 50%;
       background: $white;
       overflow: hidden;
+      @media only screen and (max-width : 48em) {
+        width: 216px;
+        height: 216px;
+      }
+      @media only screen and (max-width : 22em) {
+        width: 144px;
+        height: 144px;
+      }
       .splash-graphic {
         position: absolute;
         width: 66.6%;
         margin: 0 auto;
         opacity: 0;
-
       }
       .splash-graphic-01 {
         animation-name: toptobottom-01;
@@ -116,7 +141,6 @@
           opacity: 0;
         }
       }
-
     }
   }
 }
@@ -163,6 +187,7 @@
         position: absolute;
         top: 1em;
         left: 1.5em;
+        margin-right: 1.5em;
         h4, span {
           font-size: 1em;
           padding: 0.5em 0;
@@ -172,6 +197,41 @@
         }
       }
     }
+    @media only screen and (max-width : 48em) {
+      .work-item {
+        height: 450px;
+        .react-aspect-ratio-placeholder {
+          height: 450px;
+        }
+        &.work-item-03 {
+          border-top: 8px solid $white;
+        }
+        .label {
+          background-color: rgba($base-green, 0.75);
+          background-color: rgba($black, 0.75);
+          padding: 0.5em;
+          h4 {
+            color: $white;
+            padding-top: 0;
+          }
+          span {
+            color: $white;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width : 30em) {
+      .work-item {
+        height: 300px;
+        .react-aspect-ratio-placeholder {
+          height: 300px;
+        }
+        &.work-item-03 {
+          border-top: 8px solid $white;
+        }
+      }
+    }
+
     // BUG : Tighten alignment of elements, due to blank 4px artifact below the --aspect-ratio function, unavoidable magic numbers...
       .work-item-03 {
         top: -28px;
@@ -184,6 +244,8 @@
       .work-item-06 {
         margin-top: -4px;
       }
+    // ------------------------- //
+
   }
 
   #contact {
@@ -194,6 +256,16 @@
       font-family: "NeuzeitOffice-Bold";
       font-size: 3.157em;
       margin-bottom: 0;
+      /* Contact Temporary :: Responsive */
+      @media only screen and (max-width : 48em) {
+        font-size: 6vw;
+        a {
+          word-break: break-all;
+        }
+      }
+      @media only screen and (max-width : 30em) {
+        font-size: 1.333em;
+      }
     }
     .contact-form {
       padding: 3em 0 0;
