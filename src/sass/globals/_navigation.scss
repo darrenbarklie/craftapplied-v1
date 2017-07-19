@@ -1,20 +1,11 @@
 .nav-primary {
-  flex: 0 0 auto;
-
-  // TODO: Responsive Navigation
-  @media only screen and (max-width : 48em) {
-    display: none;
-  }
-
+  flex: 0 1 auto;
   ul {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
     li {
       flex: 0 0 auto;
-      min-width: 33.3%;
       margin: 0;
       &:before {
         content: "";
@@ -24,12 +15,37 @@
         display: inline-block;
         width: 100%;
         color: $black;
-        padding: 0.5em;
+        padding: 0.5em 1em;
         text-transform: lowercase;
         cursor: pointer;
+        transition: color 0.5s ease-out;
+        &:hover, &:focus {
+          color: $white;
+          transition: color 0.33s linear;
+        }
         &.active {
           color: $white;
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width : 48em) {
+  .nav-primary {
+    ul {
+      justify-content: flex-end;
+      li {
+        min-width: 50%;
+        text-align: right;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 30em) {
+  .nav-primary {
+    ul {
+      li {
+        width: 100%;
       }
     }
   }

@@ -4,15 +4,18 @@ header.main {
   background: $base-green;
   z-index: 99;
   .row {
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
     .brand {
       display: inline-block;
       flex: 0 0 auto;
       width: 128px;
       height: auto;
       padding-left: 0.5rem;
+      @media only screen and (max-width : 22em) {
+        width: 100px;
+      }
     }
   }
 }
