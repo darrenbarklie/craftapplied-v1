@@ -9,6 +9,9 @@ footer.main {
       li {
         display: inline-block;
         padding: 0 0.5em 0 0;
+        &::before {
+          color: rgba($black, 0.33);
+        }
         &:nth-of-type(1) {
           &::before {
             display: none;
@@ -24,6 +27,28 @@ footer.main {
             color: $white;
             background: $base-green;
             transition: all 0.33s linear;
+          }
+          &.coming-soon {
+            color: rgba($black, 0.33);
+            position: relative;
+            &:hover {
+              background-color: transparent;
+              cursor: not-allowed;
+              &::before {
+                content: "Coming soon!";
+                color: white;
+                background-color: rgba($black,0.33);
+                position: absolute;
+                width: 8em;
+                left: -2em;
+                font-size: 0.75em;
+                padding: 0.33em 0.33em 0.4em;
+                border-radius: 5px;
+                text-align: center;
+                transition: all 0.2 linear;
+                transform: rotate(-15deg);
+              }
+            }
           }
         }
         @media only screen and (max-width : 48em) {
@@ -48,7 +73,7 @@ footer.main {
         display: inline-block;
         margin-left: 0.75em;
         &::before {
-          color: $black;
+          color: rgba($black, 0.33);
         }
         &:nth-of-type(1) {
           &::before {

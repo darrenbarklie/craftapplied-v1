@@ -13,10 +13,11 @@ class Footer extends Component {
           <Row>
             <Col lg={6} md={6} sm={12} xs={12} className="social">
               <ul>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">linkedin</a></li>
-                <li><a href="#">instagram</a></li>
-                <li><a href="#">codepen</a></li>
+                <li><a href="https://www.facebook.com/craftapplied" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com/craftapplied" target="_blank">twitter</a></li>
+                <li><a href="javascript:void(0)" target="_blank" className="coming-soon">linkedin</a></li>
+                <li><a href="javascript:void(0)" target="_blank" className="coming-soon">instagram</a></li>
+                <li><a href="javascript:void(0)" target="_blank" className="coming-soon">codepen</a></li>
               </ul>
             </Col>
 

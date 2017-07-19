@@ -1,13 +1,15 @@
 {
   "name": "craftapplied",
-  "version": "0.0.3",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Craft Applied homepage",
+  "homepage": "http://www.craftapplied.com",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel",
     "webpack": "webpack",
-    "dev": "node_modules/.bin/webpack-dev-server"
+    "dev": "node_modules/.bin/webpack-dev-server",
+    "prod": "webpack -p"
   },
   "author": "Darren Barklie",
   "license": "ISC",
