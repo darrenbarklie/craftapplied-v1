@@ -35,7 +35,7 @@ module.exports = {
       },
       { // Image Loader //
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: 'file-loader',
+        loader:'file-loader?name=assets/images/[name].[ext]',
         include: path.join(__dirname, 'src'),
         exclude: [
           path.resolve(__dirname, "src/assets/font")
