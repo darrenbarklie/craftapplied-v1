@@ -39,15 +39,14 @@
   .splash-graphic {
     .container {
       position: relative;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
       display: block;
       width: 288px;
       height: 288px;
       border-radius: 50%;
       background: $white;
       overflow: hidden;
+      /* Fix for Safari overflow bug */
+      -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
       @media only screen and (max-width : 48em) {
         width: 216px;
         height: 216px;
@@ -59,7 +58,6 @@
       .splash-graphic {
         position: absolute;
         width: 66%;
-        // margin: 0 auto;
         margin: 17%;
         opacity: 0;
       }
