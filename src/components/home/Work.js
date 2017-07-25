@@ -26,20 +26,20 @@ class Work extends Component {
           <Col lg={6} md={6} sm={6} xs={12} className="col">
             <WorkObject02 name="EnergeiaWorks Website" type="Web Design &amp; Development" />
 
-            <WorkObject03 name="RMZ Law Website" type="Web Design" />
+            <WorkObject03 name="Global PR Network Website" type="Web Design &amp; Development" />
           </Col>
 
           <Col lg={12} md={12} sm={12} xs={12} className="col">
             <WorkObject04 name="James LeBosquet Hairstyling Web App" type="Web Design &amp; Development" />
           </Col>
 
-          <Col lg={6} md={6} sm={6} xs={12} className="col">
+          {/*<Col lg={6} md={6} sm={6} xs={12} className="col">
             <WorkObject05 name="NIFTIT Creative Homepage" type="Branding &amp; Illustration" />
           </Col>
 
           <Col lg={6} md={6} sm={6} xs={12} className="col">
             <WorkObject06 name="NIFTIT NYC Brochure" type="Illustration &amp; Print Design" />
-          </Col>
+          </Col> */}
 
         </Row>
 
@@ -49,20 +49,3 @@ class Work extends Component {
 }
 
 export default Work;
-
-
-// function calcRatio() {
-//   var w1 = 556;
-//   var h1 = 836;
-//   var w2 = 1112;
-//
-//   //var currentWidth = React.findDOMNode()
-//
-//   let ratio = (a, b, c) => (a / b) * c;
-//   var h2 = Math.round(ratio(h1,w1,w2));
-//
-//   console.log(h2);
-//   console.log(currentWidth);
-//
-// }
-// calcRatio();

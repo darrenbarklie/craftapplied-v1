@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Col } from 'react-flexbox-grid';
 import AspectRatio from 'react-aspect-ratio';
 
-import WorkImg from '../../../assets/img/work/03-rmz@1x.jpg';
+import WorkImg from '../../../assets/img/work/03-globalpr@1x.jpg';
 
 
 class WorkObject03 extends Component {

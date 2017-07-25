@@ -9,7 +9,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    port: 9004
+    port: 9000
   },
 	//watch: true,
 
